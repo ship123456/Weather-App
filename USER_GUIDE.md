@@ -8,7 +8,6 @@
 - [Getting Started](#getting-started)
 - [Weather Information Display](#weather-information-display)
 - [Searching for Weather Information](#searching-for-weather-information)
-- [Understanding Weather Details](#understanding-weather-details)
 - [Common Error Messages](#common-error-messages)
 - [Frequently Asked Questions](#frequently-asked-questions)
 - [Troubleshooting](#troubleshooting)
@@ -128,5 +127,5 @@ Before requesting support, ensure that:
 - The city name is entered correctly.
 - The application is running successfully.
 - Your browser is updated to the latest version.
-- 
+  
 If the issue persists after following the troubleshooting steps, verify your internet connection and restart the application before requesting support.
