@@ -172,6 +172,7 @@ The Weather App retrieves real-time weather information from the OpenWeather API
 ```text
 https://api.openweathermap.org/data/2.5/weather
 ```
+
 ### Authentication
 
 All requests to the OpenWeather API require an API key.
