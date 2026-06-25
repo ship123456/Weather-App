@@ -119,7 +119,7 @@ The Weather App supports weather searches for cities available through the OpenW
 
 ## Support
 
-If you encounter issues that cannot be resolved using this guide, refer to the project's troubleshooting documentation or contact the project maintainer.
+If you encounter issues that cannot be resolved using this guide, refer to the project's Troubleshooting documentation or contact the project maintainer.
 
 Before requesting support, ensure that:
 
