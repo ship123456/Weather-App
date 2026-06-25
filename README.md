@@ -63,7 +63,6 @@ weather-app/
 ├── src/
 │   ├── assets/
 │   ├── components/
-│   ├── services/
 │   ├── App.js
 │   ├── index.js
 │   └── styles.css
