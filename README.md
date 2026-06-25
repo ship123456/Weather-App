@@ -223,9 +223,6 @@ The project follows a modular folder structure to improve code organization and 
 |-------------|-------------|
 | `public/` | Static assets served directly by the application. |
 | `src/` | Contains the application source code. |
-| `components/` | Reusable React components. |
-| `assets/` | Images, icons, and other static resources. |
-| `services/` | API request and service logic. |
 | `App.js` | Root React component. |
 | `index.js` | Application entry point. |
 | `App.css` | Component-level application styles. |
