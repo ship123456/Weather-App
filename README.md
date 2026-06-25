@@ -63,7 +63,7 @@ weather-app/
 │
 ├── screenshots/
 │   ├── weather-app-screenshot.png
-│   ├── .gitkeep
+│   └── .gitkeep
 │
 ├── src/
 │   ├── App.js
@@ -227,7 +227,8 @@ The project follows a modular folder structure to improve code organization and 
 | `services/` | API request and service logic. |
 | `App.js` | Root React component. |
 | `index.js` | Application entry point. |
-| `styles.css` | Global application styles. |
+| `App.css` | Component-level application styles. |
+| `index.css` | Global application styles. |
 
 ## Future Enhancements
 
