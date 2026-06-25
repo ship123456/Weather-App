@@ -63,7 +63,6 @@ weather-app/
 │
 ├── screenshots/
 │   ├── weather-app-screenshot.png
-│   └── .gitkeep
 │
 ├── src/
 │   ├── App.js
