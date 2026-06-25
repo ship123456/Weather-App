@@ -60,13 +60,17 @@ weather-app/
 │
 ├── public/
 │
+├── screenshots/
+│   ├── /weather-app-screenshot.png
+│   ├── /.gitkeep
+│
 ├── src/
-│   ├── assets/
-│   ├── components/
 │   ├── App.js
 │   ├── index.js
-│   └── styles.css
+│   └── App.css
+│   └── index.css
 │
+├── .gitinore
 ├── package.json
 ├── package-lock.json
 ├── README.md
