@@ -1,119 +1,240 @@
-# Weather App Installation Guide
+# Payment Gateway
+
+# Installation Guide
+
+**Version:** 1.0
+
+**Last Updated:** June 2026
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [System Requirements](#system-requirements)
 - [Prerequisites](#prerequisites)
-- [Downloading the Project](#downloading-the-project)
+- [Obtaining the Project](#obtaining-the-project)
 - [Installing Dependencies](#installing-dependencies)
 - [Environment Configuration](#environment-configuration)
 - [Running the Application](#running-the-application)
 - [Verifying the Installation](#verifying-the-installation)
 - [Common Installation Issues](#common-installation-issues)
 - [Uninstalling the Application](#uninstalling-the-application)
+- [Frequently Asked Questions](#frequently-asked-questions)
 
 ## Introduction
 
-This guide provides step-by-step instructions for installing and configuring the Weather App on a local system. It includes system requirements, project setup, dependency installation, environment configuration, and verification steps to ensure the application runs successfully.
+This Installation Guide provides step-by-step instructions for setting up and running the Payment Gateway Dashboard on a local development environment. It covers system requirements, project setup, dependency installation, environment configuration, application startup, verification, and common installation issues.
+
+---
 
 ## System Requirements
 
-Before installing the Weather App, ensure your system meets the following requirements:
+Before installing the application, ensure your system meets the following requirements.
 
-- Operating System: Windows, macOS, or Linux
-- Node.js (version 18 or later)
-- npm (Node Package Manager)
-- A modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, or Safari)
-- An active internet connection
+### Hardware Requirements
+
+- Desktop or laptop computer
+- Minimum 4 GB RAM
+- Stable internet connection
+- At least 500 MB of available disk space
+
+### Software Requirements
+
+- Node.js (v18 or later)
+- npm (included with Node.js)
+- Git
+- Visual Studio Code (recommended)
+
+### Supported Browsers
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Safari
+
+### Supported Operating Systems
+
+- Windows 10 or later
+- macOS
+- Linux
+
+---
 
 ## Prerequisites
 
-Before proceeding with the installation, ensure that:
+Before installing the project, ensure the following requirements are met:
 
-- Node.js is installed on your system.
-- npm is available from the command line.
-- You have a valid OpenWeather API key.
-- Git is installed if you plan to clone the project repository.
+- Node.js is installed.
+- npm is available.
+- Git is installed.
+- A code editor is available.
+- Internet access is available to download project dependencies.
 
-## Downloading the Project
+To verify the installed versions, run:
 
-Clone the Weather App repository using Git.
+```bash
+node -v
+npm -v
+git --version
+```
+
+---
+
+## Obtaining the Project
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/yourusername/weather-app.git
-```
-
-### Navigate to the Project Directory
+Clone the repository using Git:
 
 ```bash
-cd weather-app
+git clone https://github.com/your-username/payment-gateway.git
 ```
+
+Navigate to the project directory:
+
+```bash
+cd payment-gateway
+```
+
+Alternatively, download the project as a ZIP archive from GitHub and extract it to your preferred location.
+
+---
 
 ## Installing Dependencies
 
-Install all required project dependencies by running the following command:
+Install all required project dependencies by running:
 
 ```bash
 npm install
 ```
 
-This command installs all project dependencies defined in the `package.json` file.
+The installation process downloads all required packages defined in the project's `package.json` file.
+
+Wait until the installation completes successfully before proceeding.
+
+---
 
 ## Environment Configuration
 
-Create a `.env` file in the project root directory and add your OpenWeather API key.
+This project does not require additional environment variables for local development.
 
-```env
-REACT_APP_WEATHER_API_KEY=your_api_key
+If future versions require environment configuration, create a `.env` file in the project root directory and configure the required variables.
+
+Example:
+
+```text
+REACT_APP_API_URL=http://localhost:3000
 ```
 
-Replace `your_api_key` with your valid OpenWeather API key before running the application.
-
-> **Note:** Never commit your `.env` file or API keys to a public repository.
+---
 
 ## Running the Application
 
-Start the development server using the following command:
+Start the development server using:
 
 ```bash
 npm start
 ```
 
-After the application starts successfully, open your web browser and navigate to:
+If your project uses Vite instead of Create React App, use:
+
+```bash
+npm run dev
+```
+
+After the server starts successfully, open your browser and navigate to:
 
 ```text
 http://localhost:3000
 ```
 
-If port 3000 is already in use, React may prompt you to run the application on a different available port.
+---
 
 ## Verifying the Installation
 
-The installation is successful if:
+After starting the application, verify the installation by confirming the following:
 
-- The application loads without errors.
-- The home page is displayed.
-- You can search for a city.
-- Current weather information is displayed successfully.
-- No installation or runtime errors appear in the browser console.
+- The Sign In page loads successfully.
+- Users can navigate through the application.
+- The Dashboard opens after successful authentication.
+- New payments can be created.
+- Payment History displays transactions.
+- Webhooks, Support, Profile, and Settings pages are accessible.
+
+A successful installation confirms that the application is ready for use.
+
+---
 
 ## Common Installation Issues
 
 | Issue | Possible Solution |
 |--------|-------------------|
-| `npm install` fails | Verify that Node.js and npm are installed correctly. |
-| Missing API key | Confirm that the `.env` file contains a valid API key. |
-| Application does not start | Verify that all project dependencies are installed. |
-| Port 3000 is already in use | Close the application using port 3000 or start the app on a different port. |
+| `npm install` fails | Verify your internet connection and ensure Node.js is installed correctly. |
+| Module not found | Delete the `node_modules` folder and run `npm install` again. |
+| Port already in use | Stop the process using the current port or configure another port. |
+| Application does not start | Verify that all project dependencies are installed correctly. |
+| Browser displays a blank page | Refresh the page or clear the browser cache. |
+| Command not recognized | Ensure Node.js and npm are added to the system PATH. |
+
+---
 
 ## Uninstalling the Application
 
-To remove the Weather App from your local system:
+To remove the project from your local system:
 
-1. Stop the development server.
-2. Delete the project directory.
-3. Remove the `.env` file if it contains sensitive API keys.
-4. Uninstall Node.js or project dependencies if they are no longer required.
+1. Stop the development server using:
+
+```text
+Ctrl + C
+```
+
+2. Delete the project folder from your computer.
+
+3. (Optional) Remove installed dependencies by deleting the `node_modules` directory before deleting the project.
+
+No additional uninstallation steps are required.
+
+---
+
+## Frequently Asked Questions
+
+### Which version of Node.js is recommended?
+
+Node.js version 18 or later is recommended.
+
+### Which browser should I use?
+
+Google Chrome is recommended for the best experience.
+
+### What should I do if `npm install` fails?
+
+Verify your internet connection, confirm that Node.js is installed correctly, and run the command again.
+
+### Which command starts the application?
+
+Use:
+
+```bash
+npm start
+```
+
+or
+
+```bash
+npm run dev
+```
+
+depending on your project configuration.
+
+### How do I stop the development server?
+
+Press **Ctrl + C** in the terminal where the application is running.
+
+### How do I reinstall all dependencies?
+
+Delete the `node_modules` folder and run:
+
+```bash
+npm install
+
+again.
+````
