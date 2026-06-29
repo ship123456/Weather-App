@@ -24,8 +24,6 @@
 
 This Installation Guide provides step-by-step instructions for setting up and running the Payment Gateway Dashboard on a local development environment. It covers system requirements, project setup, dependency installation, environment configuration, application startup, verification, and common installation issues.
 
----
-
 ## System Requirements
 
 Before installing the application, ensure your system meets the following requirements.
@@ -57,8 +55,6 @@ Before installing the application, ensure your system meets the following requir
 - macOS
 - Linux
 
----
-
 ## Prerequisites
 
 Before installing the project, ensure the following requirements are met:
@@ -76,8 +72,6 @@ node -v
 npm -v
 git --version
 ```
-
----
 
 ## Obtaining the Project
 
@@ -97,8 +91,6 @@ cd payment-gateway
 
 Alternatively, download the project as a ZIP archive from GitHub and extract it to your preferred location.
 
----
-
 ## Installing Dependencies
 
 Install all required project dependencies by running:
@@ -111,23 +103,11 @@ The installation process downloads all required packages defined in the project'
 
 Wait until the installation completes successfully before proceeding.
 
----
-
 ## Environment Configuration
 
 This project does not require additional environment variables for local development.
 
-This project does not require additional environment variables for local development.
-
 No further configuration is required after installing the project dependencies.
-
-Example:
-
-```text
-REACT_APP_API_URL=http://localhost:3000
-```
-
----
 
 ## Running the Application
 
@@ -143,8 +123,6 @@ After the server starts successfully, open your browser and navigate to:
 http://localhost:3000
 ```
 
----
-
 ## Verifying the Installation
 
 After starting the application, verify the installation by confirming the following:
@@ -159,8 +137,6 @@ After starting the application, verify the installation by confirming the follow
 
 A successful installation confirms that the application is ready for use.
 
----
-
 ## Common Installation Issues
 
 | Issue | Possible Solution |
@@ -171,8 +147,6 @@ A successful installation confirms that the application is ready for use.
 | Application does not start | Verify that all project dependencies are installed correctly. |
 | Browser displays a blank page | Refresh the page or clear the browser cache. |
 | Command not recognized | Ensure Node.js and npm are added to the system PATH. |
-
----
 
 ## Uninstalling the Application
 
@@ -189,8 +163,6 @@ Ctrl + C
 3. (Optional) Remove installed dependencies by deleting the `node_modules` directory before deleting the project.
 
 No additional uninstallation steps are required.
-
----
 
 ## Frequently Asked Questions
 
@@ -218,14 +190,6 @@ Use:
 npm start
 ```
 
-or
-
-```bash
-npm run dev
-```
-
-depending on your project configuration.
-
 ### How do I stop the development server?
 
 Press **Ctrl + C** in the terminal where the application is running.
@@ -236,3 +200,4 @@ Delete the `node_modules` folder and run:
 
 ```bash
 npm install
+```
