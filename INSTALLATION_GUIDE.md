@@ -117,7 +117,9 @@ Wait until the installation completes successfully before proceeding.
 
 This project does not require additional environment variables for local development.
 
-If future versions require environment configuration, create a `.env` file in the project root directory and configure the required variables.
+This project does not require additional environment variables for local development.
+
+No further configuration is required after installing the project dependencies.
 
 Example:
 
@@ -133,12 +135,6 @@ Start the development server using:
 
 ```bash
 npm start
-```
-
-If your project uses Vite instead of Create React App, use:
-
-```bash
-npm run dev
 ```
 
 After the server starts successfully, open your browser and navigate to:
@@ -159,6 +155,7 @@ After starting the application, verify the installation by confirming the follow
 - New payments can be created.
 - Payment History displays transactions.
 - Webhooks, Support, Profile, and Settings pages are accessible.
+- The application loads without console errors.
 
 A successful installation confirms that the application is ready for use.
 
@@ -209,6 +206,10 @@ Google Chrome is recommended for the best experience.
 
 Verify your internet connection, confirm that Node.js is installed correctly, and run the command again.
 
+### Can I use a different code editor?
+
+Yes. Although Visual Studio Code is recommended, any modern code editor can be used.
+
 ### Which command starts the application?
 
 Use:
@@ -235,6 +236,3 @@ Delete the `node_modules` folder and run:
 
 ```bash
 npm install
-
-again.
-````
